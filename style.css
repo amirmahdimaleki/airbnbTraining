@@ -287,8 +287,8 @@ footer h2{
     border-radius: 30x;
 }
 
-nav .fas-bars{
-    font-display: none;
+nav .fa-bars{
+    display: none;
 }
 
 /*=========================== for small screen devices  ==================================*/
@@ -320,13 +320,16 @@ nav .fas-bars{
         margin: 15px 0 30px;
         display: inline-block;
     }
-    nav .fas-bars{
-        font-display: block;
+    nav .fa-bars{
+        display: block;
         position: fixed;
         top: 4%;
         right: 7%;
         color: #fff;
-        font-size: 280px;
+        font-size: 28px;
+    }
+    nav .fa-bars:hover{
+        color: #ff5361;
     }
     .active::after{
         left: -40px;
