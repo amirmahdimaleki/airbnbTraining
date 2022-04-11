@@ -302,6 +302,7 @@ nav .fa-bars{
         top: 4%;
         left: 7%;
     }
+
     nav{
         position: fixed;
         top: 0;
@@ -315,14 +316,17 @@ nav .fa-bars{
         overflow: hidden;
         transition: max-height 0.5s;
     }
+
     nav .nav-links li{
         margin: 10px 0;
         display: block;
     }
+
     .register-btn{
         margin: 15px 0 30px;
         display: inline-block;
     }
+
     nav .fa-bars{
         display: block;
         position: fixed;
@@ -331,21 +335,26 @@ nav .fa-bars{
         color: #fff;
         font-size: 28px;
     }
+
     nav .fa-bars:hover{
         color: #ff5361;
     }
+
     .active::after{
         left: -40px;
         transform: translate(0, -50%);
         bottom: 50%;
     }
+
     .hidemenu{
         max-height: 300px;
     }
+
     .header h1{
         padding-top: 200px;
         font-size: 7vw;
     }
+
     .search-bar{
         width: 90%;
         margin: 30px auto;
@@ -353,10 +362,12 @@ nav .fa-bars{
         border-radius: 7px;
         position: relative;
     }
+
     .search-bar form{
         display: block;
 
     }
+
     .search-bar form input{
         border-bottom: 1px solid #ddd;
         width: 100%;
@@ -364,34 +375,42 @@ nav .fa-bars{
         margin-top: 10px;
         padding-bottom: 10px;
     }
+
     .search-bar form button{
         position: absolute;
         bottom: 0;
         left: 50%;
         transform: translate(-50%, 50%)
     }
+
     .sub-title{
         font-size: 6vw;
     }
+
     .cta{
         padding: 50% 5%; 
     }
+
     .cta h3{
         font-size: 7vw;
         line-height: 8vw;
     } 
+
     .cta p{
         font-size: 14px;
     }
+
     .cta-btn{
         padding: 6px 15px;
         border-radius: 5px;
         margin-top: 10px;
         font-size: 14px;
     }
+
     .stories p{
         font-size: 22px;
     }
+
     .about-msg{
         font-size: 15px;
     }
@@ -566,18 +585,23 @@ list-container{
     .list-container{
         margin-top: 150px;
     }
+
     .left-col, .right-col, .house-img, .house-info{
         flex-basis: 100%;
     } 
+
     .left-col h1{
         font-size: 22px;
     }
+
     .house-info h3{
         font-size: 18px;
     }
+
     .house-info i{
         font-size: 16px;
     }
+
     .pagination span{
         margin: 10px 2px;
         width: 30px;
@@ -770,4 +794,62 @@ list-container{
     padding: 15px 50px;
     border: 1px solid  #ff5361;
     border-radius: 9px;
+}
+
+/*======================================= media queries of house detail page ========================================*/
+
+@media only screen and (max-width: 700px){
+    .house-details{
+        margin-top: 150px;
+    }
+
+    .row p{
+        margin-top: 10px;
+    }
+
+    .gallery{
+        grid-template-areas: 'first first' '. .' '. .';
+    }
+
+    .small-details h2{
+        font-size: 20px;
+        margin-top: 24px;
+    }
+
+    .small-details h4{
+       text-align: left;
+       margin: 10px 0;
+       font-size: 18px;
+    }
+
+    .check-form{
+        padding: 10px 30px;
+    }
+
+    .check-form div{
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .check-form input{
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        padding-bottom: 5px;
+    }
+
+    .check-form button{
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+    }
+
+    .host{
+        display: block;
+        line-height: 28px;
+    }
+
+    .contact-host{
+        margin: 48px 0;
+    }
 }
